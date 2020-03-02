@@ -1,0 +1,10 @@
+<h1>My Products</h1>
+<div *ngFor="let product of products; index as productId">
+    <h3>
+        <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">{{ product.name }}</a>
+    </h3>
+    <p>{{ product.price | currency }}</p>
+    <p><em>{{ product.description }}</em></p>
+    <button (click)="share()">Share</button>
+    <app-product-alerts [product]="product" (notify)="onNotify(product)"></app-product-alerts>
+</div>

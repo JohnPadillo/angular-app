@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "first-angular-app-56c9e": {
+      "hosting": {
+        "angular-app": [
+          "first-angular-app-56c9e"
+        ]
+      }
+    }
+  }
+}
